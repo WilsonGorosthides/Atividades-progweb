@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.direita{
+    margin: 1px;
+    text-align: right;
+    font-size: 10pt;
+}
+
+ul#produtos{
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+}
+
+ul#produtos li {
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin: 5px;
+    border: 5px solid white;
+    background-color: #ffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all .4s ease-in;
+}
+
+ul#produtos li span{
+    color: rgb(0, 0, 0);
+}
+
+ul#produtos li:hover {
+    transform: translateY(-5px);
+}

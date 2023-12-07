@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Loja do Eita!</title>
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilos/produtos.css" />
+    <script src="javascript/funcoes.js"></script>
+</head>
+
+<body>
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+                <h1 id="nloja">Loja do Eita</h1>
+                <h2>É eita atrás de eita!</h2>
+            </hgroup>
+
+            <img id="logo" src="imagens/logo-mini.png" />
+
+            <nav id="menu">
+                <h1 id='mp'>Menu Principal</h1>
+                <ul>
+                    <li><a href="index.html"><img src="imagens/home.png" /></a></li>
+                    <li><a href="conta.html"><img src="imagens/pessoa.png" /></a></li>
+                    <li><a href="carrinho.html"><img src="imagens/carrinho.png" /></a></li>
+                </ul>
+            </nav>
+
+            <form method="get" id="bBusca">
+                <label for="busca"></label> <input type="text" name="tBusca" id="busca" size="40" maxlength="40"
+                    placeholder="Buscar" />
+                <input type="image" name="tPesq" src="imagens/lupa.png">
+            </form>
+
+        </header>
+        
+
+
+
+        <section id="corpo">
+
+            <h1>Todos os produtos</h1>
+
+            <p> <label for="ordencao">Ordenar por: </label> <select name="nOrd" id="iOdr">
+                    <option selected>Listagem Padrão</option>
+                    <option>Preço mais Baixo</option>
+                    <option>Melhores Avaliaçõe</option>
+                    <option>Mais Populares</option>
+                    <option>Mais Vendidos</option>option>
+            </select> </p>
+
+            <ul id="produtos">
+                <div id="coluna1">
+                <li id="prod1"><img src="imagens/produto01.jpg"/> <span>Notebook Acer Aspire 5 A515-54-50BT Intel Core i5-10210U 8GB 512GB W10 15,6" Prata<p class="direita">R$3.754,37</p></span></li>
+                <li id="prod2"><img src="imagens/produto02.jpg"/> <span>Notebook Samsung Book Intel Core I3-1115G4 4GB 1TB W10 FHD 15.6'' Cinza Chumbo NP550XDA-KT1BR<p class="direita">R$2.849,99</p></span></li>
+                <li id="prod3"><img src="imagens/produto03.jpg"/> <span>Notebook Vaio FE14 VJFE42F11X-B1521H Intel Core i3-10110U 4GB 128GB SSD FHD Linux 14" Chumbo Escuro<p class="direita">R$2.564,99</p></span></li>
+            
+            </div>
+            <div id="coluna2">
+                <li id="prod4"><img src="imagens/produto04.jpg"/> <span>Notebook Samsung Book Intel Celeron-6305 4GB 500GB W10 FHD 15,6'' Branco NP550XDA-KO2BR<p class="direita">R$2.355,05</p></span></li>                
+                <li id="prod5"><img src="imagens/produto05.jpg"/> <span>Smart TV LG 65" 4K NanoCell 65NANO75 3x HDMI 2.0 Inteligência Artificial Thinqai Smart Magic Google Alexa<p class="direita">R$5.999,99</p></span></li>
+                <li id="prod6"><img src="imagens/produto06.jpg"/> <span>Smart TV LED 55” LG 55NANO85 4K NanoCell 120hz Freesync 2 Hdmi 2.1 Inteligência Artificial ThinQ Google Alexa<p class="direita">R$4.654,99</p></span></li> 
+            </div>
+            <div id="coluna3">
+                <li id="prod7"><img src="imagens/produto07.jpg"/> <span>Top Relogio Smartwatch Original Android Ios Smart-wat<p class="direita">R$609,90</p></span></li>
+                <li id="prod8"><img src="imagens/produto08.jpg"/> <span>Relógio Smartwatch Xiaomi Haylou Solar Ls05<p class="direita">R$235,90</p></span></li>
+                <li id="prod9"><img src="imagens/produto09.jpg"/> <span>Smartphone Moto G100 - Luminous Sky<p class="direita">R$3.098,00</p></span></li>
+            </div>
+            <div id="coluna4">
+                <li id="prod10"><img src="imagens/produto10.jpg"/> <span>Smartphone Samsung Galaxy S21+ 256GB 5G Wi-Fi Tela 6.7'' Dual Chip 8GB RAM Câmera Tripla + Selfie 10MP - Preto<p class="direita">R$5.160,10</p></span></li>
+                <li id="prod11"><img src="imagens/produto11.jpg"/> <span>martphone Motorola Moto G9 Play 64GB 4G Wi-Fi Tela 6.5'' Dual Chip 4GB RAM Câmera Tripla + Selfie 8MP - Azul Safira<p class="direita">R$1.190,30</p></span></li>
+                <li id="prod12"><img src="imagens/produto12.jpg"/> <span>iPhone 12 Apple (64GB) Preto Tela 6,1" 5G Câmera 12MP + 12MP iOS<p class="direita">R$5.261,47</p></span></li>
+            </div>
+            </ul>
+        </section>
+
+        <footer id="rodape">
+            <p>ProgWeb|2021</p>
+            <p>Loja do Eita!</p>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

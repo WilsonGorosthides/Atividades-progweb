@@ -1,0 +1,12 @@
+INSERT INTO Produtos VALUES ('Notebook Acer Aspire 5 A515-54-50BT Intel Core i5-10210U 8GB 512GB W10 15,6" Prata', 100, 3754.37);
+INSERT INTO Produtos VALUES ('Notebook Samsung Book Intel Core I3-1115G4 4GB 1TB W10 FHD 15.6" Cinza Chumbo NP550XDA-KT1BR', 100, 2849.99);
+INSERT INTO Produtos VALUES ('Notebook Vaio FE14 VJFE42F11X-B1521H Intel Core i3-10110U 4GB 128GB SSD FHD Linux 14" Chumbo Escuro', 100, 2564.99);
+INSERT INTO Produtos VALUES ('Notebook Samsung Book Intel Celeron-6305 4GB 500GB W10 FHD 15,6" Branco NP550XDA-KO2BR', 100, 2355.05);
+INSERT INTO Produtos VALUES ('Smart TV LG 65" 4K NanoCell 65NANO75 3x HDMI 2.0 Inteligência Artificial Thinqai Smart Magic Google Alexa', 100, 5999.99);
+INSERT INTO Produtos VALUES ('Smart TV LED 55" LG 55NANO85 4K NanoCell 120hz Freesync 2 Hdmi 2.1 Inteligência Artificial ThinQ Google Alexa', 100, 4654.99);
+INSERT INTO Produtos VALUES ('Top Relogio Smartwatch Original Android Ios Smart-wat', 100, 609.90);
+INSERT INTO Produtos VALUES ('Relógio Smartwatch Xiaomi Haylou Solar Ls0', 100, 235.90);
+INSERT INTO Produtos VALUES ('Smartphone Moto G100 - Luminous Sky', 100, 3098.00);
+INSERT INTO Produtos VALUES ('Smartphone Samsung Galaxy S21+ 256GB 5G Wi-Fi Tela 6.7" Dual Chip 8GB RAM Câmera Tripla + Selfie 10MP - Preto', 100, 5160.10);
+INSERT INTO Produtos VALUES ('martphone Motorola Moto G9 Play 64GB 4G Wi-Fi Tela 6.5" Dual Chip 4GB RAM Câmera Tripla + Selfie 8MP - Azul Safira', 100, 1190.30);
+INSERT INTO Produtos VALUES ('iPhone 12 Apple (64GB) Preto Tela 6,1" 5G Câmera 12MP + 12MP iOS', 100, 5261.47);

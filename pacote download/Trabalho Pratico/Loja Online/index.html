@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Loja do Eita!</title>
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilos/index.css" />
+    <script src="javascript/funcoes.js"></script>
+</head>
+
+<body>
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+                <h1 id="nloja">Loja do Eita</h1>
+                <h2>É eita atrás de eita!</h2>
+            </hgroup>
+
+            <img id="logo" src="imagens/logo-mini.png" />
+
+            <nav id="menu">
+                <h1 id='mp'>Menu Principal</h1>
+                <ul>
+                    <li><a href="index.html"><img src="imagens/home.png" /></a></li>
+                    <li><a href="conta.html"><img src="imagens/pessoa.png" /></a></li>
+                    <li><a href="carrinho.html"><img src="imagens/carrinho.png" /></a></li>
+                </ul>
+            </nav>
+
+            <form method="get" id="bBusca">
+                <label for="busca"></label> <input type="text" name="tBusca" id="busca" size="40" maxlength="40"
+                    placeholder="Buscar" />
+                <input type="image" name="tPesq" src="imagens/lupa.png">
+            </form>
+
+        </header>
+
+        <section id="corpo">
+            <section id="imagenspromo">
+                <img src="imagens/promocao.png" />
+            </section>
+
+            <h2 class="etiqueta">Categoria</h2>
+            <ul id="categoria">
+                <a href="produtos.html">
+                    <li id="foto01"><span>Celulares</span></li>
+                </a>
+                <a href="produtos.html">
+                    <li id="foto02"><span>Notebook</span></li>
+                </a>
+                <a href="produtos.html">
+                    <li id="foto03"><span>Relógio</span></li>
+                </a>
+            </ul>
+
+            <h2 class="etiqueta">Promoções</h2>
+            <ul id="promocao">
+                <li><img src="imagens/produto04.jpg" /> <span>Notebook Samsung Book Intel Celeron-6305 4GB 500GB W10 FHD
+                        15,6'' Branco NP550XDA-KO2BR <p class="direita">R$2.355,05</p></span></li>
+                <li><img src="imagens/produto06.jpg" /> <span>Smart TV LED 55” LG 55NANO85 4K NanoCell 120hz Freesync 2
+                        Hdmi 2.1 Inteligência Artificial ThinQ Google Alexa <p class="direita">R$4.654,99</p> </span>
+                </li>
+                <li><img src="imagens/produto08.jpg" /> <span>Relógio Smartwatch Xiaomi Haylou Solar Ls05 <p
+                            class="direita">R$235,90</p></span></li>
+                <li><img src="imagens/produto12.jpg" /> <span>iPhone 12 Apple (64GB) Preto Tela 6,1" 5G Câmera 12MP +
+                        12MP iOS <p class="direita">R$5.261,47</p></span></li>
+            </ul>
+
+            <div id="prodExclusivo">
+                <img src="imagens/mcExclusivo.png" />
+                <section>
+                    <h1>Produto Exclusivo</h1>
+                    <h2>Macbook Pro 13,3” Apple M1 8GB - 256GB SSD Cinza-espacial</h2>
+                    <p>Por fora, ele continua sendo o notebook profissional mais popular da Apple.<br />Por dentro,
+                        mudou e
+                        vai mudar tudo!</p>
+                    <a href="descricao-produtos.html" id="btn">Comprar Agora &#8594;</a>
+                </section>
+            </div>
+
+
+            <ul id="autores">
+                <li><img src="imagens/Ana.png" id="ana"><span>Ana Paula Ferreira Barroso de Castro</span></li>
+                <li><img src="imagens/Leticia.png"><span>Leticia Marlen Godoi</span></li>
+                <li><img src="imagens/victor.png"><span>Victor Hugo Bustamonte Mendonça</span></li>
+                <li><img src="imagens/wilson.png"><span>Wilson da Silva Gorosthides Neto</span></li>
+            </ul>
+
+            <ul id="colaboradores">
+                <li class="logo"><img src="imagens/Logo-Dell.png" /></li>
+                <li class="logo"><img src="imagens/Apple-logo.png" /></li>
+                <li class="logo"><img src="imagens/samsung.png" /></li>
+                <li class="logo"><img src="imagens/Motorola-Logo.png" /></li>
+                <li class="logo"><img src="imagens/Xiaomi_logo.png" /></li>
+            </ul>
+
+        </section>
+
+        <footer id="rodape">
+            <p>ProgWeb|2021</p>
+            <p>Loja do Eita!</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

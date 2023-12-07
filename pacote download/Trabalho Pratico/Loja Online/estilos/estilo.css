@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+div#interface{
+    background-color: #ff0000;
+    height: 80px;
+}
+
+p {
+    text-align: justify;
+}
+
+a{
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+body {
+    background-color: rgba(251, 255, 0, 0.867);
+    color: rgba(0, 0, 0, 1);
+    font-family: Arial, sans-serif;
+
+}
+
+/*Foramtação Cabeçalho*/
+header#cabecalho{ 
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+}
+
+header#cabecalho img#logo{
+    position:absolute;
+    left: 10px;
+    top: 40px;
+}
+
+
+
+header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #000000;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+header#cabecalho h2{
+    font-family: 'Titillium Web', sans-serif;
+    color: rgba(186, 219, 247, 1);
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: -0px;
+    text-align: center;
+}
+
+
+/*Formatação do menu*/
+
+nav#menu ul{
+    position: absolute;
+    top: 90px;
+    left: -30px;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: rgba(251, 255, 0, 0.867);
+    padding: 5px;
+    margin: 1px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover{
+    background-color: rgba(252, 249, 206, 0.867);;
+}
+
+nav#menu h1{
+    display: none;
+}
+
+form#bBusca{
+    position: absolute;
+    top: 130px;
+    left: 40%;
+}
+
+/*Formatação rodape*/
+
+footer#rodape{
+    background-color: #2600ff;
+    color: #ffffff;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+footer#rodape p{
+    text-align: center;
+}

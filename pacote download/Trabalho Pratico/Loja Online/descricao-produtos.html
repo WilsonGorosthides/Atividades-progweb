@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Loja do Eita!</title>
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilos/descricao.css" />
+    <script src="javascript/funcoes.js"></script>
+</head>
+
+<body>
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+                <h1 id="nloja">Loja do Eita</h1>
+                <h2>É eita atrás de eita!</h2>
+            </hgroup>
+
+            <img id="logo" src="imagens/logo-mini.png" />
+
+            <nav id="menu">
+                <h1 id='mp'>Menu Principal</h1>
+                <ul>
+                    <li><a href="index.html"><img src="imagens/home.png" /></a></li>
+                    <li><a href="conta.html"><img src="imagens/pessoa.png" /></a></li>
+                    <li><a href="carrinho.html"><img src="imagens/carrinho.png" /></a></li>
+                </ul>
+            </nav>
+
+            <form method="get" id="bBusca">
+                <label for="busca"></label> <input type="text" name="tBusca" id="busca" size="40" maxlength="40"
+                    placeholder="Buscar" />
+                <input type="image" name="tPesq" src="imagens/lupa.png">
+            </form>
+
+        </header>
+
+        <div id="desc">
+            <section id="corpo">
+                <section id="imagens">
+
+                    <img src="imagens/mcExclusivo.png" id="principal" />
+
+                    <ul id="galeria">
+                        <li><img src="imagens/mcExclusivo01.jpg" class="imgmini" /></li>
+                        <li><img src="imagens/mcExclusivo02.jpg" class="imgmini" /></li>
+                        <li><img src="imagens/mcExclusivo03.jpg" class="imgmini" /></li>
+                        <li><img src="imagens/mcExclusivo04.jpg" class="imgmini" /></li>
+                    </ul>
+                </section>
+
+                <section id="descricao">
+                    <h1>Macbook Pro 13,3” Apple M1 8GB - 256GB SSD Cinza-espacial</h1>
+                    <h3>Informações do Produto </h3>
+                    <p>Macbook Pro 13,3” Apple M1 8GB - 256GB SSD Cinza-espacial <br>
+                        O MacBook Pro de 13 polegadas* está voando com o chip M1 da Apple. Sua CPU de oito núcleos
+                        encara
+                        com rapidez fluxos de trabalho complexos em fotografia, programação, edição de vídeo e muito
+                        mais. A
+                        GPU de oito núcleos da conta de tarefas com gráficos pesados e roda muito melhor os jogos. O
+                        Neural
+                        Engine de 16 núcleos aumenta o poder do aprendizado de maquina dos seus apps favoritos. A
+                        memoria
+                        unificada ultrarrápida traz consistência ao desempenho. E a bateria tem o maior tempo de duração
+                        em
+                        um Mac: até 20 horas**. Por fora, ele continua sendo o notebook profissional mais popular da
+                        Apple.
+                        Por dentro, mudou e vai mudar tudo. Avisos legais: *Em comparação com a geração anterior.**A
+                        duração
+                        da bateria varia de acordo com o uso e a configuração. Consulte apple.com/br/batteries para
+                        obter
+                        mais informações.</p>
+                        <p class="direita">R$11.960,10<p>
+                        <input type="number" value="0" min="0" max="15">
+                        <a href="carrinho.html" id="botao">Adicionar ao Carrinho</a>
+                </section>
+            </section>
+        </div>
+
+        <footer id="rodape">
+            <p>ProgWeb|2021</p>
+            <p>Loja do Eita!</p>
+        </footer>
+
+    </div>
+    <script>
+        var Principal = document.getElementById("principal");
+        var Imgmini = document.getElementsByClassName("imgmini");
+
+        Imgmini[0].onclick = function(){
+           Principal.src = Imgmini[0].src; 
+        }
+        Imgmini[1].onclick = function(){
+           Principal.src = Imgmini[1].src; 
+        }
+        Imgmini[2].onclick = function(){
+           Principal.src = Imgmini[2].src; 
+        }
+        Imgmini[3].onclick = function(){
+           Principal.src = Imgmini[3].src; 
+        }
+
+    </script>
+
+</body>
+
+</html>

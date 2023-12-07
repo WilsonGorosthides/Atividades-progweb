@@ -1,0 +1,59 @@
+section#corpo{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff0000;
+    font-weight: normal;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color: #2600ff;
+    font-size: 15px;
+}
+
+td img {
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.produto{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produto p{
+    display: none;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total table{
+    border-top: 3px solid #ff0000;
+    width: 100%;
+    max-width: 400px;
+}

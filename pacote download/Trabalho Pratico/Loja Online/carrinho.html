@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Loja do Eita!</title>
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilos/carrinho.css" />
+    <script src="javascript/funcoes.js"></script>
+</head>
+
+<body>
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+                <h1 id="nloja">Loja do Eita</h1>
+                <h2>É eita atrás de eita!</h2>
+            </hgroup>
+
+            <img id="logo" src="imagens/logo-mini.png" />
+
+            <nav id="menu">
+                <h1 id='mp'>Menu Principal</h1>
+                <ul>
+                    <li><a href="index.html"><img src="imagens/home.png" /></a></li>
+                    <li><a href="conta.html"><img src="imagens/pessoa.png" /></a></li>
+                    <li><a href="carrinho.html"><img src="imagens/carrinho.png" /></a></li>
+                </ul>
+            </nav>
+
+            <form method="get" id="bBusca">
+                <label for="busca"></label> <input type="text" name="tBusca" id="busca" size="40" maxlength="40"
+                    placeholder="Buscar" />
+                <input type="image" name="tPesq" src="imagens/lupa.png">
+            </form>
+
+        </header>
+
+        <section id='corpo'>
+            <table>
+                <tr>
+                    <th>Produtos</th>
+                    <th>Quantidade</th>
+                    <th>Valor Unitário</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="produto">
+                            <img src="imagens/carrinho1.png">
+                            <div>
+                                <p>Kit 4 Em 1 Striker Teclado + Mouse + Headset + Mousepad Gamer Clear Sound Elg</p>
+                                <small>Preço: R$ 211,35</small>
+                                <br>
+                                <a href="">Excluir</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" min="1" max="1"></td>
+                    <td>R$ 211,35</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="produto">
+                            <img src="imagens/carrinho2.jpg">
+                            <div>
+                                <p>Cadeira Gamer Vermelha - Prizi - Jx-1039r</p>
+                                <small>Preço: R$ 639,92</small>
+                                <br>
+                                <a href="">Excluir</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" min="1" max="1"></td>
+                    <td>R$ 639,92</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="produto">
+                            <img src="imagens/carrinho3.jpg">
+                            <div>
+                                <p>Notebook Acer Aspire 5 AN515-55-705U Intel Core i7-10750H 8GB 512GB W10 15.6'' - Preto</p>
+                                <small>Preço: R$ 7.444,31</small>
+                                <br>
+                                <a href="">Excluir</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" max="1"></td>
+                    <td>R$ 7.444,31</td>
+                </tr>
+            </table>
+            <div class="total">
+                <table>
+                    <tr>
+                        <td>Subtotal:</td>
+                        <td>R$ 8.295,58</td>
+                    </tr>
+                    <tr>
+                        <td>Taxas:</td>
+                        <td>Grátis!</td>
+                    </tr>
+                    <tr>
+                        <td>Total:</td>
+                        <td>R$ 8.295,58</td>
+                    </tr>
+                </table>
+            
+            </div>
+        </section>
+
+        <footer id="rodape">
+            <p>ProgWeb|2021</p>
+            <p>Loja do Eita!</p>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

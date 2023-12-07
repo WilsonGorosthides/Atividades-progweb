@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+.direita{
+    margin: 1px;
+    text-align: right;
+    font-size: 10pt;
+}
+
+section#imagenspromo, ul#categoria, ul#promocao, ul#autores{
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/*Formatção das imagens do inicio*/
+section#imagenspromo li {
+    float: left;
+    margin: 10px;
+}
+
+
+
+/*titulo da etiqueta*/
+.etiqueta, div#prodExclusivo h1 {
+    text-align: center;
+    margin: 0 auto 0px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.etiqueta::after {
+    content: '';
+    background: #ff0000;
+    width: 60px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*Formação da categoria*/
+ul#categoria {
+    width: 700 px;
+}
+
+ul#categoria li{
+    float: left;
+    width: 195px;
+    height: 195px;
+    margin: 60px;
+    border: 5px solid white;
+    background-color: #ffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all .4s ease-in;
+}
+/*Legendas das fotos da categoria*/
+ul#categoria li span {
+    opacity: 0;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px #0000;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#categoria li:hover {
+    -webkit-transform: scale(1.5);
+}
+
+ul#categoria li:hover span {
+    opacity: 1;
+}
+
+/*Fotos para categoria*/
+ul#categoria li#foto01 {
+    background: url("../imagens/categoria-celular.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffff;
+}
+
+ul#categoria li#foto01:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#categoria li#foto02 {
+    background: url("../imagens/categoria-notebook.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffff;
+}
+
+ul#categoria li#foto02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#categoria li#foto03 {
+    background: url("../imagens/categoria-relogio.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffff;
+}
+
+ul#categoria li#foto03:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+/*Formatação da promoção*/
+ul#promocao li {
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin: 5px;
+    border: 5px solid white;
+    background-color: #ffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all .4s ease-in;
+}
+
+ul#promocao li span{
+    color: rgb(0, 0, 0);
+}
+
+ul#promocao li:hover {
+    transform: translateY(-5px);
+}
+
+/*Formatação do produto exclusivo*/
+div#prodExclusivo{
+    background: radial-gradient(#ffff, rgba(251, 255, 0, 0.867));
+    display: flex;
+    justify-content: center;
+}
+
+div#prodExclusivo img{
+    float: left;
+    margin: 20px;
+    border: 5px solid white;
+    background-color: #ffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+div#prodExclusivo section{
+    margin-top: 30px;
+    position: relative;
+}
+
+div#prodExclusivo h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div#prodExclusivo h2{
+    font-size: 13pt;
+    left: 20px;
+}
+
+a#btn {
+    display: inline-block;
+    background: #ffbb00;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+a#btn:hover {
+    background: #ff0202;
+}
+
+/*Formatação autores*/
+
+ul#autores {
+    width: 700 px;
+}
+
+ul#autores li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    border: 5px solid white;
+    background-color: #ffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all .4s ease-in;
+}
+
+/*Legendas das fotos da autores*/
+ul#autores li span {
+    opacity: 0;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px #0000;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 7pt;
+}
+
+ul#autores li:hover {
+    -webkit-transform: scale(1.5);
+}
+
+ul#autores li:hover span {
+    opacity: 1;
+}
+
+/*Fotos para autores*/
+ul#autores li img{
+    background-position: 50% 50%;
+    background-size: 200px 200px;
+    background-color: #ffff;
+}
+
+ul#autores li:hover img{
+    background-position: 0px 0px;
+    background-size: 400px 400px;
+}
+
+/*Formatação logo colaboradoes*/
+ul#colaboradores{
+    overflow: hidden;
+    list-style: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.logo img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.logo img:hover{
+    filter: grayscale(0);
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Ao escrever uma meta tag, use entre 140 e 160 caracteres para que o Google possa exibir toda a sua mensagem. Não se esqueça de incluir sua palavra-chave!" /> 
+        <meta name="author" content=" nome do autor da página" />
+        <meta name="keywords" content="As palavras-chaves são utilizadas para ajudar na indexação da sua página pelos motores de busca, funcionam como uma categorização do conteúdo" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="refresh" contenteditable="30" />
+        <link href="estilos/style.css" rel="stylesheet" type="text/css">
+        <title>Ele define o título na barra de ferramentas do navegador. </title>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo"> <a href="index.html"><img src="imagens/logo.png" width="90px"></a></div>
+            <div class="titulo"><h1>LOJA DO EITA</h1></div>
+            <div class="slogan"><h2 class="slogan-text">É EITA ATRÁS DE EITA</h2></div>
+        </header>
+        
+    <div class="container">
+        <div class="navbar">
+                
+            <nav class="header2">
+               <ul id="MenuItems">
+                    <li class="menu"><a><img src="imagens/menu.png" width="25px"</a></li>
+                    <li class="user"><a href="conta.html"><img src="imagens/pessoa.png" width="20px"</a></li>
+                    <li class="home"><a href="index.html"><img src="imagens/home.png" width="35px"></a></li>
+                    <li class="shopcar"><a href="carrinho.html"><img src="imagens/carrinho.png" width="35px"></a></li>
+                </ul>
+                <div class="research">
+                    <button class="button-search"><ion-icon name="search-sharp"></ion-icon></button>
+                    <input type="text" placeholder="Buscar">
+                    <button class="button-mic"><ion-icon name="mic"></ion-icon></button>
+                </div>
+                <div class="loc">
+                    <ion-icon name="location-sharp"></ion-icon>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Conta -->
+    <div class="account">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="imagens/logo.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()" >Login</span>
+                            <span onclick="register()" >Cadastro</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form action="post" id="LoginForm">
+                            <input type="text" placeholder="Usuário" >
+                            <input type="password" placeholder="Senha" >
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Esqueceu sua senha?</a>
+                        </form>
+                        <form action="post" id="RegForm">
+                            <input type="text" placeholder="Usuário">
+                            <input type="email" placeholder="E-mail">
+                            <input type="password" placeholder="Senha">
+                            <button type="submit" class="btn">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Deixe-nos ajudá-los</h3>
+                <ul>
+                    <li>Sua conta</li>
+                    <li>Frete e prazo de entrega</li>
+                    <li>Devolução e reembolsos</li>
+                    <li>Gerencie seu conteúdo e dispositivos</li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <h3>Conheça-nos</h3>
+                <ul>
+                    <li>Informações corporativas</li>
+                    <li>Careiras</li>
+                    <li>Comunicados a imprensa</li>
+                    <li>Comunidade</li>
+                    <li>Acessibilidade</li>
+                </ul>
+            </div>
+            <div class="footer-col-3">
+                <h3>Ajuda</h3>
+                <ul>
+                    <li>Pagamento</li>
+                    <li>Eita e COVID-19</li>
+                    <li>Cartões de crédito, débito e boleto</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Ganhe dinheiro conosco</h3>
+                <ul>
+                    <li>Publique seus livros</li>
+                    <li>Seja um associado</li>
+                    <li>Venda na Eita</li>
+                    <li>Anuncie seus produtos</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p>Loja do Eita!</p>
+    </div>
+</div>
+    </div>
+    </div>
+
+    <!-- js para toggle form -->
+    <script>
+var LoginForm = document.getElementById("LoginForm");
+var RegForm = document.getElementById("RegForm");
+var Indicator = document.getElementById("Indicator");
+
+function register(){
+    RegForm.style.transform = "translateX(0px)";
+    LoginForm.style.transform = "translateX(0px)";
+    Indicator.style.transform = "translateX(100px)";
+}
+function login(){
+    RegForm.style.transform = "translateX(300px)";
+    LoginForm.style.transform = "translateX(300px)";
+    Indicator.style.transform = "translateX(0px)";
+
+}
+
+    </script>
+
+</body>
+
+</html>

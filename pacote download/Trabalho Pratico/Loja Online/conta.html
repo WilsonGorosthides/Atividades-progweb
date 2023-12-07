@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Loja do Eita!</title>
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilos/conta.css" /> 
+</head>
+
+<body>
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+                <h1 id="nloja">Loja do Eita</h1>
+                <h2>É eita atrás de eita!</h2>
+            </hgroup>
+
+            <img id="logo" src="imagens/logo-mini.png" />
+
+            <nav id="menu">
+                <h1 id='mp'>Menu Principal</h1>
+                <ul>
+                    <li><a href="index.html"><img src="imagens/home.png" /></a></li>
+                    <li><a href="conta.html"><img src="imagens/pessoa.png" /></a></li>
+                    <li><a href="carrinho.html"><img src="imagens/carrinho.png" /></a></li>
+                </ul>
+            </nav>
+
+            <form method="get" id="bBusca">
+                <label for="busca"></label> <input type="text" name="tBusca" id="busca" size="40" maxlength="40"
+                    placeholder="Buscar" />
+                <input type="image" name="tPesq" src="imagens/lupa.png">
+            </form>
+
+        </header>
+
+        <section id="corpo">
+            <article id="usuario">
+                <div class="botao-transicao">
+                    <span onclick="login()">Login</span>
+                    <span onclick="cadastro()">Cadastro</span>
+                    <hr id="indicador">
+                </div>
+                <form action="post" id="fLogin">
+                    <input class="iUsuario" type="text" placeholder="Usuário">
+                    <input class="iUsuario" type="password" placeholder="Senha">
+                    <button type="submit" class="botao">Login</button>
+                    <a href="">Esqueceu sua senha?</a>
+                </form>
+                <form action="post" id="fCadastro">
+                    <input class="iUsuario" type="text" placeholder="Usuário">
+                    <input class="iUsuario" type="email" placeholder="E-mail">
+                    <input class="iUsuario" type="password" placeholder="Senha">
+                    <button type="submit" class="botao">Cadastrar</button>
+                </form>
+            </article>
+        </section>
+
+        <aside id="lateral">
+            <img src="imagens/logo.png" />
+        </aside>
+
+        <footer id="rodape">
+            <p>ProgWeb|2021</p>
+            <p>Loja do Eita!</p>
+        </footer>
+
+    </div>
+    <script>
+        var fCadastro = document.getElementById("fCadastro");
+        function cadastro() {
+            fCadastro.style.transform = "translateX(-325px)";
+        }
+        function login() {
+            fCadastro.style.transform = "translateX(0px)";
+        }
+    </script>
+
+</body>
+
+</html>
